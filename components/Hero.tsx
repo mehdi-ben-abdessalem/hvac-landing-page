@@ -26,7 +26,7 @@ export default function Hero() {
           transition={{ duration: 0.6 }}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight mb-4 sm:mb-5 md:mb-6"
         >
-          We book 10 HVAC Inspections<br />
+          We book 10 HVAC Inspections
           In 30 days<br />
           Or you don't pay
         </motion.h1>
