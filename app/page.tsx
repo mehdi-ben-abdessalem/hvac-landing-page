@@ -4,6 +4,8 @@ import PainPoints from '@/components/PainPoints'
 import HowItWorks from '@/components/HowItWorks'
 import Pricing from '@/components/Pricing'
 import Footer from '@/components/Footer'
+import AddOns from '@/components/AddOns'
+import FinalCTA from '@/components/FinalCTA'
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <PainPoints />
       <HowItWorks />
       <Pricing />
+      <AddOns />
+      <FinalCTA />
       <Footer />
     </main>
   )
