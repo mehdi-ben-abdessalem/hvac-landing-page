@@ -27,13 +27,13 @@ export default function HowItWorks() {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <section id="how-it-works" ref={ref} className="py-20 px-6 bg-white">
+    <section id="how-it-works" ref={ref} className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-4"
+          className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 text-center mb-3 sm:mb-4"
         >
           How It Works
         </motion.h2>
@@ -42,32 +42,33 @@ export default function HowItWorks() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto"
+          className="text-base sm:text-lg md:text-xl text-gray-600 text-center mb-10 sm:mb-12 md:mb-16 max-w-2xl sm:max-w-3xl mx-auto leading-relaxed px-2 sm:px-0"
         >
           Simple, fast, and proven. We handle the lead response so you can focus on what you do best.
         </motion.p>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 md:gap-8">
           {steps.map((step, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
-              className="relative"
+              className="relative flex flex-col items-center"
             >
-              <div className="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto">
+              <div className="bg-blue-600 text-white w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center text-xl sm:text-2xl font-bold mb-4 sm:mb-5 md:mb-6 flex-shrink-0">
                 {step.number}
               </div>
               
+              {/* Desktop connector line - only visible between steps on desktop */}
               {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-8 left-[calc(50%+2rem)] w-[calc(100%-4rem)] h-0.5 bg-gray-300" />
+                <div className="hidden md:block absolute top-7 sm:top-8 left-[calc(50%+2rem)] w-[calc(100%-4rem)] h-0.5 bg-gray-300" />
               )}
 
-              <h3 className="text-2xl font-bold text-gray-900 mb-3 text-center">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3 text-center leading-snug">
                 {step.title}
               </h3>
-              <p className="text-gray-600 text-center">
+              <p className="text-sm sm:text-base text-gray-600 text-center leading-relaxed max-w-xs sm:max-w-sm md:max-w-none">
                 {step.description}
               </p>
             </motion.div>
