@@ -6,20 +6,20 @@ import { useRef } from 'react'
 
 const painPoints = [
   {
-    title: 'Missed Calls = Lost Jobs',
-    description: 'Every unanswered call is a competitor getting the job instead of you.',
+    title: 'Missed Calls Go to Your Competitors',
+    description: 'When a call goes unanswered, most customers don’t wait — they call the next HVAC company.',
   },
   {
-    title: 'Slow Follow-Up Kills Conversion',
-    description: 'Leads go cold when you wait hours or days to respond. Speed wins.',
+    title: 'Slow Follow-Up Lets Hot Leads Go Cold',
+    description: 'Even a short delay can cost the job. The first company to respond usually wins.',
   },
   {
-    title: 'Paying for Ads That Don\'t Convert',
-    description: 'Your ad spend generates leads, but they\'re not turning into inspections.',
+    title: 'You Pay for Leads — But They Slip Through',
+    description: 'Ads and referrals bring in calls and forms, but missed or delayed responses mean fewer booked inspections.',
   },
   {
-    title: 'Chasing Leads Instead of Running Jobs',
-    description: 'You should be out in the field, not stuck on the phone playing phone tag.',
+    title: 'You’re Chasing Leads Instead of Running Jobs',
+    description: 'Every callback pulls you away from jobs, installs, and growth.',
   },
 ]
 
@@ -36,7 +36,7 @@ export default function PainPoints() {
           transition={{ duration: 0.5 }}
           className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 text-center mb-8 sm:mb-12 md:mb-16"
         >
-          Stop Losing Inspections
+          You’re Losing Inspections — Even When Leads Are Coming In
         </motion.h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
@@ -48,11 +48,11 @@ export default function PainPoints() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white p-6 sm:p-7 md:p-8 rounded-lg shadow-sm border border-gray-200"
             >
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-red-100 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 7v5l3 3" /></svg>
               </div>
+
               <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 leading-snug">
                 {point.title}
               </h3>

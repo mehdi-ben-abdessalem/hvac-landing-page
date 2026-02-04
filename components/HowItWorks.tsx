@@ -8,15 +8,20 @@ const steps = [
   {
     number: '1',
     title: 'Lead Comes In',
-    description: 'From your ads, website, or referrals — we capture it instantly.',
+    description: 'From your ads, calls, website, or referrals — we capture it instantly.',
   },
   {
     number: '2',
-    title: 'We Respond, Qualify & Follow Up',
-    description: 'In under 60 seconds, we reach out, qualify the prospect, and schedule the inspection.',
+    title: 'Call Is Missed, We Step In Instantly',
+    description: 'The moment a call or form is missed, we detect it instantly.',
   },
   {
     number: '3',
+    title: 'We Intervene Within 60 Seconds',
+    description: 'In under a minute, we qualify the lead and book the inspection.',
+  },
+  {
+    number: '4',
     title: 'Inspection Booked, You Close',
     description: 'Show up to a qualified appointment ready to close. No chasing, no missed opportunities.',
   },
@@ -47,7 +52,7 @@ export default function HowItWorks() {
           Simple, fast, and proven. We handle the lead response so you can focus on what you do best.
         </motion.p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 sm:gap-10 md:gap-6 lg:gap-8">
           {steps.map((step, index) => (
             <motion.div
               key={index}
@@ -71,6 +76,20 @@ export default function HowItWorks() {
               <p className="text-sm sm:text-base text-gray-600 text-center leading-relaxed max-w-xs sm:max-w-sm md:max-w-none">
                 {step.description}
               </p>
+
+              {/* Step 3 specific UL list */}
+              {step.number === '3' && (
+                <ul className="mt-4 space-y-2 text-xs sm:text-sm text-gray-600 text-left w-full max-w-xs sm:max-w-sm md:max-w-none">
+                  <li className="flex items-start">
+                    <span className="mr-2 text-blue-600 flex-shrink-0">•</span>
+                    <span>Owner notified instantly by SMS + email</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2 text-blue-600 flex-shrink-0">•</span>
+                    <span>Customer receives a text that we’re calling back</span>
+                  </li>
+                </ul>
+              )}
             </motion.div>
           ))}
         </div>

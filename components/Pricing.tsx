@@ -61,15 +61,30 @@ export default function Pricing() {
               <svg className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 mr-2.5 sm:mr-3 flex-shrink-0 mt-0.5 sm:mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
+              <span className="text-sm sm:text-base text-gray-700 leading-relaxed">Inspections booked directly on your calendar</span>
+            </li>
+            <li className="flex items-start">
+              <svg className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 mr-2.5 sm:mr-3 flex-shrink-0 mt-0.5 sm:mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              <span className="text-sm sm:text-base text-gray-700 leading-relaxed">Instant SMS + email notifications so you always know when we step in</span>
+            </li>
+            <li className="flex items-start">
+              <svg className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 mr-2.5 sm:mr-3 flex-shrink-0 mt-0.5 sm:mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
               <span className="text-sm sm:text-base text-gray-700 leading-relaxed">Works with your existing ads and CRM</span>
             </li>
             <li className="flex items-start">
               <svg className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 mr-2.5 sm:mr-3 flex-shrink-0 mt-0.5 sm:mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              <span className="text-sm sm:text-base text-gray-700 leading-relaxed">Only pay when we deliver results</span>
+              <span className="text-sm sm:text-base text-gray-700 leading-relaxed">Pay only once 10 additional inspections are booked</span>
             </li>
           </ul>
+          <p className="text-xs sm:text-sm text-gray-500 leading-relaxed mb-4 sm:mb-6">
+            An inspection is considered booked when we intervene and a qualified lead is scheduled on your calendar.
+          </p>
 
           <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3.5 sm:p-4 mb-6 sm:mb-8">
             <p className="text-xs sm:text-sm text-gray-700 text-center leading-relaxed">
