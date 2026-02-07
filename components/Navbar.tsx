@@ -43,7 +43,7 @@ export default function Navbar() {
             onClick={() => scrollToSection('pricing')}
             className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
           >
-            Check My Company's Eligibility
+            See If You Qualify (2-Min Assessment)
           </button>
         </div>
 

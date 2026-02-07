@@ -37,7 +37,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 mb-3 sm:mb-4 max-w-2xl sm:max-w-3xl md:max-w-4xl mx-auto leading-relaxed px-2 sm:px-0"
         >
-          We handle lead response, qualification, and follow-up in under 60 seconds to add 10 additional inspections — you just show up and close.
+          When you miss a call or web lead, we respond in under 60 seconds, qualify the prospect, and book the inspection on your calendar. You show up and close.
         </motion.p>
 
         <motion.p
@@ -46,8 +46,19 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-sm sm:text-base text-gray-500 mb-8 sm:mb-9 md:mb-10"
         >
-          Works with your existing ads, CRM and referrals.
+          Works with your ads, CRM, and referrals.<br/>
+          24/7 coverage including nights & weekends.
         </motion.p>
+        <motion.p
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.25 }}
+  className="text-sm sm:text-base text-gray-600 mb-8 sm:mb-9 md:mb-10"
+>
+  <strong>Built for residential HVAC companies with 3+ trucks.</strong>
+  <br />
+  Works with any inbound lead source.
+</motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -59,7 +70,7 @@ export default function Hero() {
             onClick={scrollToPricing}
             className="w-full sm:w-auto bg-blue-600 text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-blue-700 hover:scale-105 transition-all shadow-lg active:scale-95"
           >
-            Check My Company's Eligibility
+            See If You Qualify (2-Min Assessment)
           </button>
           <button
             onClick={scrollToHowItWorks}

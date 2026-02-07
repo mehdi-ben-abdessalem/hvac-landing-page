@@ -55,7 +55,7 @@ export default function Pricing() {
               <svg className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 mr-2.5 sm:mr-3 flex-shrink-0 mt-0.5 sm:mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              <span className="text-sm sm:text-base text-gray-700 leading-relaxed">Full qualification and follow-up handled</span>
+              <span className="text-sm sm:text-base text-gray-700 leading-relaxed">Qualify them using your criteria (service area, job type, timeline)</span>
             </li>
             <li className="flex items-start">
               <svg className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 mr-2.5 sm:mr-3 flex-shrink-0 mt-0.5 sm:mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
